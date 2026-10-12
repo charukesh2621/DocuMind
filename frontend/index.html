@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DocuMind — Document Intelligence</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<div id="sidebar">
+    <div id="brand">
+        <div id="brand-mark"></div>
+        <div>
+            <div id="brand-name">DocuMind</div>
+            <div id="brand-sub">Document Intelligence</div>
+        </div>
+    </div>
+
+    <button id="newChatBtn">+ New chat</button>
+
+    <div id="historyLabel">History</div>
+    <div id="historyList"></div>
+
+    <div id="sidebarFooter">Each chat keeps its own documents & conversation.</div>
+</div>
+
+<div id="main">
+    <div id="topbar">
+        <div id="chatTitleWrap">
+            <div id="chatTitle">New chat</div>
+            <div id="chatMeta">0 documents</div>
+        </div>
+        <button id="addDocsBtn">+ Add documents<input type="file" id="fileInput" accept=".pdf,.docx,.txt,.png,.jpg,.jpeg,.webp,.bmp,.tiff,.tif"></button>
+    </div>
+
+    <div id="docChipBar"></div>
+    <div id="uploadStatus"></div>
+
+    <div id="messages"><div id="messagesInner"></div></div>
+
+    <div id="modalOverlay">
+        <div id="modalContent">
+            <button id="modalClose">×</button>
+            <div id="modalTitle"></div>
+            <div id="modalMeta"></div>
+            <div id="modalText"></div>
+        </div>
+    </div>
+
+    <div id="inputBar">
+        <form id="chatForm">
+            <div id="inputInner">
+                <input type="text" id="chatInput" placeholder="Ask anything about your documents..." autocomplete="off">
+                <button type="submit" id="sendBtn">➤</button>
+            </div>
+        </form>
+        <div id="inputHint">DocuMind can make mistakes. Check important information.</div>
+    </div>
+</div>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

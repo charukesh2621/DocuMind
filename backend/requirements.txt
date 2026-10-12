@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+PyMuPDF
+sentence-transformers
+# Reranking model dependency: sentence-transformers includes CrossEncoder
+chromadb
+requests
+python-docx
+python-dotenv
